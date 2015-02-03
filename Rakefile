@@ -59,7 +59,6 @@ namespace :git do
 
   task :push do
     sh "git push origin master"
-    sh "git push zilium master"
   end
 end
 
