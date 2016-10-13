@@ -21,8 +21,8 @@ command! KillWhitespace :normal :%s/ *$//g<cr><c-o><cr>
 nmap <silent> // :nohlsearch<CR>
 
 
-nmap <leader>t :CommandT<CR>
-nmap <leader>T :CommandTFlush<CR>:CommandT<CR>
+nmap <leader>t :CtrlP<CR>
+nmap <leader>b :CtrlPBuffer<CR>
 
 map yc zc
 
@@ -80,3 +80,5 @@ nnoremap <leader>em :ElmMakeCurrentFile<CR>
 let g:crystal_define_mappings=0
 autocmd FileType crystal nmap <F2> :CrystalSpecRunCurrent<CR>
 autocmd FileType crystal nmap <S-F2> :CrystalSpecRunAll<CR>
+
+set runtimepath^=~/.vim/bundle/ag
