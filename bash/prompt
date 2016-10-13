@@ -22,7 +22,7 @@ function prompt_command() {
   local git_branch=$(git symbolic-ref --short HEAD 2>/dev/null)
 
   if [ "$git_branch" = "" ]; then # no git -> normal prompt
-    PS1="\u@${COLOR_HOST}\h ${COLOR_WHITE}\w${COLOR_NORMAL}$ "
+    PS1="\u@${COLOR_HOST}\h ${COLOR_WHITE}\w${COLOR_NORMAL}\n$ "
   else
     local git_status=$(git status --porcelain | perl -we '%k=map{$_=>1}split("",join("",map{/^(..)/&&$1}<>));print sort keys%k')
 
@@ -34,7 +34,7 @@ function prompt_command() {
       local prog_prompt="?"
     fi
 
-    PS1="\u@${COLOR_HOST}\h ${COLOR_LPURPLE}$prog_prompt\n${COLOR_LGREEN}($git_branch${COLOR_RED}$git_status${COLOR_LGREEN}) ${COLOR_WHITE}\w${COLOR_NORMAL}$ "
+    PS1="\u@${COLOR_HOST}\h ${COLOR_LPURPLE}$prog_prompt\n${COLOR_LGREEN}($git_branch${COLOR_RED}$git_status${COLOR_LGREEN}) ${COLOR_WHITE}\w${COLOR_NORMAL}\n$ "
   fi
 }
 PROMPT_COMMAND="${PROMPT_COMMAND}; prompt_command"
