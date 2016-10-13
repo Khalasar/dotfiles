@@ -4,6 +4,7 @@ alias gc='git commit -v'
 alias gca='gc -a'
 alias gco='git checkout'
 alias gc-='gco -'
+alias gcp='git cherry-pick'
 alias gd='git diff'
 alias gdc='git diff --cached'
 alias ga='git add'
@@ -24,18 +25,8 @@ alias grc='git rebase --continue'
 alias gra='git rebase --abort'
 
 neogit() {
-  git config user.name "Peter Suschlik" 
-  git config user.email "ps@neopoly.de" 
-  echo -n "Name: " 
-  git config user.name
-  echo -n "E-Mail: " 
-  git config user.email
-}
-
-
-pgit() {
-  git config user.name "Peter Suschlik" 
-  git config user.email "peter@suschlik.de" 
+  git config user.name "André Stuhrmann"
+  git config user.email "as@neopoly.de"
   echo -n "Name: " 
   git config user.name
   echo -n "E-Mail: " 

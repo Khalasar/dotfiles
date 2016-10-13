@@ -17,7 +17,7 @@
   grep = auto
 
 [github]
-  user = splattael
+  user = Khalasar
 
 [core]
   excludesfile = ~/.gitexcludes 
@@ -56,11 +56,8 @@
 [url "gitlab@gitlab.neopoly.de:"]
   insteadOf = neo:
 
-[url "git@git.zilium.de:"]
-  insteadOf = z:
-
 [user]
-  name = Peter Suschlik
-  email = ps@neopoly.de
+  name = Andre Stuhrmann
+  email = as@neopoly.de
 [diff "image"]
 	command = git-imgdiff

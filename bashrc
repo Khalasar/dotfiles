@@ -10,7 +10,6 @@ source ~/.bash/elm
 source ~/.bash/prompt
 source ~/.bash/bin
 source ~/.bash/git
-source ~/.bash/zilium
 source ~/.bash/rvm
 source ~/.bash/nvm
 source ~/.bash/ruby
