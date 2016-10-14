@@ -21,8 +21,14 @@ command! KillWhitespace :normal :%s/ *$//g<cr><c-o><cr>
 nmap <silent> // :nohlsearch<CR>
 
 
-nmap <leader>t :CtrlP<CR>
-nmap <leader>b :CtrlPBuffer<CR>
+" nmap <leader>t :CtrlP<CR>
+" nmap <leader>b :CtrlPBuffer<CR>
+nmap <leader>t :FZF<CR>
+nmap <leader>b :Buffers<CR>
+
+" FZF
+let g:fzf_launcher='gnome-terminal --disable-factory -x bash -ic %s'
+
 
 map yc zc
 
