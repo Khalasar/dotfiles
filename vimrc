@@ -26,6 +26,9 @@ nmap <silent> // :nohlsearch<CR>
 nmap <leader>t :FZF<CR>
 nmap <leader>b :Buffers<CR>
 
+" map resizing of window
+nmap <C-w>? :resize<CR>
+
 " FZF
 let g:fzf_launcher='gnome-terminal --disable-factory -x bash -ic %s'
 
@@ -81,6 +84,7 @@ set wildmenu
 nnoremap <leader>el :ElmEvalLine<CR>
 vnoremap <leader>es :<C-u>ElmEvalSelection<CR>
 nnoremap <leader>em :ElmMakeCurrentFile<CR>
+let g:elm_format_autosave = 1
 
 " Crystal
 let g:crystal_define_mappings=0
