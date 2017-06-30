@@ -92,3 +92,10 @@ autocmd FileType crystal nmap <F2> :CrystalSpecRunCurrent<CR>
 autocmd FileType crystal nmap <S-F2> :CrystalSpecRunAll<CR>
 
 set runtimepath^=~/.vim/bundle/ag
+
+colorscheme railscasts
+
+highligh clear SignColumn
+
+" Enable rufo (RUby FOrmat)
+let g:rufo_auto_formatting = 1
