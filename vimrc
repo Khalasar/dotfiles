@@ -99,3 +99,6 @@ highligh clear SignColumn
 
 " Enable rufo (RUby FOrmat)
 let g:rufo_auto_formatting = 1
+
+autocmd bufwritepost *.js silent !standard --fix %
+set autoread
