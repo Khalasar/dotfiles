@@ -25,3 +25,10 @@ fi
 if [ -f ~/.localrc ]; then
   source ~/.localrc
 fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH=$PATH:/opt/home/as/devel/nit/bin
+source /opt/home/as/devel/nit/bin/nit.completion
