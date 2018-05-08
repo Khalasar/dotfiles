@@ -1,1 +1,2 @@
+shell -bash
 source $HOME/.screenrc.d/default
