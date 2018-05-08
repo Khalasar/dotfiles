@@ -2,6 +2,8 @@
 
 alias root="sudo -i bash"
 
+umask 0002
+
 #PROJECT_HOST=kebap.neopoly.de
 PROJECT_HOST=doener.neopoly.de
 PROJECT_DIR=/home/projekte
