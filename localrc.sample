@@ -4,7 +4,10 @@
 
 export COLOR_HOST=$COLOR_BROWN
 
-export GIT_AUTHOR_EMAIL="email@example.com"
-export GIT_COMMITTER_EMAIL="email@example.com"
-export GIT_AUTHOR_NAME="Andre Stuhrmmann"
-export GIT_COMMITTER_NAME="Andre Stuhrmann"
+export GIT_AUTHOR_EMAIL="as@neopoly.de"
+export GIT_COMMITTER_EMAIL="as@neopoly.de"
+export GIT_AUTHOR_NAME="André Stuhrmmann"
+export GIT_COMMITTER_NAME="André Stuhrmann"
+
+export DEV_UID=$(id -u)
+export DEV_GID=$(id -g)

@@ -57,7 +57,7 @@
   insteadOf = neo:
 
 [user]
-  name = Andre Stuhrmann
+  name = André Stuhrmann
   email = as@neopoly.de
 [diff "image"]
 	command = git-imgdiff
