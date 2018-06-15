@@ -32,6 +32,8 @@ nmap <C-w>? :resize<CR>
 " FZF
 let g:fzf_launcher='gnome-terminal --disable-factory -x bash -ic %s'
 
+set rtp+=~/.fzf
+
 
 map yc zc
 
@@ -46,9 +48,7 @@ set splitbelow
 set splitright
 
 " pathogen
-call pathogen#infect()
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+execute pathogen#infect()
 
 " gem-ctags
 autocmd FileType ruby let &l:tags = pathogen#legacyjoin(pathogen#uniq(pathogen#split(&tags) + map(split($GEM_PATH,':'),'v:val."/gems/*/tags"')))

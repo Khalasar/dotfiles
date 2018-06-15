@@ -32,3 +32,5 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH=$PATH:/opt/home/as/devel/nit/bin
 source /opt/home/as/devel/nit/bin/nit.completion
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
