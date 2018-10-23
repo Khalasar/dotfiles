@@ -20,20 +20,13 @@ command! KillWhitespace :normal :%s/ *$//g<cr><c-o><cr>
 " Clear current search highlight by double tapping //
 nmap <silent> // :nohlsearch<CR>
 
-
-" nmap <leader>t :CtrlP<CR>
-" nmap <leader>b :CtrlPBuffer<CR>
-nmap <leader>t :FZF<CR>
+nmap <leader>t :Files<CR>
 nmap <leader>b :Buffers<CR>
 
 " map resizing of window
 nmap <C-w>? :resize<CR>
 
-" FZF
-let g:fzf_launcher='gnome-terminal --disable-factory -x bash -ic %s'
-
 set rtp+=~/.fzf
-
 
 map yc zc
 
@@ -102,3 +95,5 @@ let g:rufo_auto_formatting = 1
 
 autocmd bufwritepost *.js silent !standard --fix %
 set autoread
+
+set updatetime=100
