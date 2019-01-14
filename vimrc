@@ -96,4 +96,10 @@ let g:rufo_auto_formatting = 1
 autocmd bufwritepost *.js silent !standard --fix %
 set autoread
 
+" Allow vim-gitgutter to show git history sign immediately
 set updatetime=100
+
+set guioptions-=m  "remove menu bar
+set guioptions-=T  "remove toolbar
+set guioptions-=r  "remove right-hand scroll bar
+set guioptions-=L  "remove left-hand scroll bar
