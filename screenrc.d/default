@@ -1,3 +1,4 @@
+shell -bash
 startup_message off
 
 deflogin on
