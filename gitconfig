@@ -9,6 +9,7 @@
 
   cp = cherry-pick
   latest = for-each-ref --sort=-committerdate --format='%(committerdate:iso8601)%09%(objectname:short)      %(refname:short) | %(authorname)'
+	diff-image = "!f() { cd -- \"${GIT_PREFIX:-.}\"; GIT_DIFF_IMAGE_ENABLED=1 git diff \"$@\"; }; f"
 
 [color]
   branch = auto
@@ -21,6 +22,7 @@
 
 [core]
   excludesfile = ~/.gitexcludes 
+	attributesfile = ~/.gitattributes
 #  whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
 
 [giggle]
@@ -60,4 +62,4 @@
   name = André Stuhrmann
   email = as@neopoly.de
 [diff "image"]
-	command = git-imgdiff
+	command = /opt/home/as/devel/private/git-diff-image/git_diff_image
